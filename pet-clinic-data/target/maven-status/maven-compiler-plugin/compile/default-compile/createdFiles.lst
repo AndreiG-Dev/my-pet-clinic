@@ -1,0 +1,5 @@
+com\springproject\mypetclinic\model\Pet.class
+com\springproject\mypetclinic\model\PetType.class
+com\springproject\mypetclinic\model\Vet.class
+com\springproject\mypetclinic\model\Owner.class
+com\springproject\mypetclinic\model\Person.class
