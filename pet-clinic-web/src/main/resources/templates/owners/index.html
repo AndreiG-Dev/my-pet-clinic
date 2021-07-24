@@ -5,6 +5,21 @@
   <title>Owner Clinic IndexPage</title>
 </head>
 <body>
-<h1>Owners</h1>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th style="width: 150px;">Id</th>
+    <th style="width: 150px;">First Name</th>
+    <th style="width: 150px;">Last Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="owner : ${owners}">
+    <td th:text="${owner.getId()}">1</td>
+    <td th:text="${owner.getFirstName()}">Joe</td>
+    <td th:text="${owner.getLastName()}">Buck</td>
+  </tr>
+  </tbody>
+</table>
 </body>
 </html>
