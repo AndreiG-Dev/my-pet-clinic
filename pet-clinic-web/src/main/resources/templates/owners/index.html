@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
 <head>
   <meta charset="UTF-8">
   <title>Owner Clinic IndexPage</title>
 </head>
 <body>
+
+<h2 th:text="'List of Owners'">Owners List</h2>
+
 <table class="table table-striped">
   <thead>
   <tr>
