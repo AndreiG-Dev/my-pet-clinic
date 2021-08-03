@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.springproject.mypetclinic.MyPetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.01 s - in com.springproject.mypetclinic.MyPetClinicApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.699 s - in com.springproject.mypetclinic.MyPetClinicApplicationTests
