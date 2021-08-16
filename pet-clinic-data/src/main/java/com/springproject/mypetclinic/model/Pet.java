@@ -7,6 +7,11 @@ import java.time.LocalDate;
 @Table(name="pets")
 public class Pet extends BaseEntity{
 
+    @Column( name = "name")
+    private String name;
+
+    @ManyToOne
+    @JoinColumn(name = "type_id")
     private PetType petType;
 
     @ManyToOne
@@ -16,8 +21,13 @@ public class Pet extends BaseEntity{
     @Column(name="birth_date")
     private LocalDate birthDate;
 
-    @Column( name = "name")
-    private String name;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public PetType getPetType() {
         return petType;
@@ -43,11 +53,4 @@ public class Pet extends BaseEntity{
         this.birthDate = birthDate;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
